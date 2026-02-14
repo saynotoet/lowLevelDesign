@@ -1,4 +1,4 @@
-We have bike interface, and all the time method turnOnEngine get's called then it turn on the engine
+We have bike interface, and all the time method turnOnEngine gets called then it turn on the engine
 or set the isEngineOn to true but in Bicycle case there is no engine at all. then we throw an error. but
 this violates the principle as it is breaking the behaviour of the program.
 

@@ -3,4 +3,4 @@ in parameters which revokes the creation logic from the class and just accepts t
 
 
 In  this rule,
-class should depend on interfaces rather than conrete classes.
+class should depend on interfaces rather than concrete classes.
