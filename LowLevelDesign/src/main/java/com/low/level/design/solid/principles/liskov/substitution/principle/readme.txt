@@ -2,7 +2,7 @@ We have bike interface, and all the time method turnOnEngine gets called then it
 or set the isEngineOn to true but in Bicycle case there is no engine at all. then we throw an error. but
 this violates the principle as it is breaking the behaviour of the program.
 
-now when we pass the object of bicycle to the program and calls turnOnEngine mehod it will
+now when we pass the object of bicycle to the program and calls turnOnEngine method it will
 create problem.
 
 

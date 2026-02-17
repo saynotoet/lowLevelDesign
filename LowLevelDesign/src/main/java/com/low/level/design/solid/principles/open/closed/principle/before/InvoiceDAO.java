@@ -12,11 +12,11 @@ public class InvoiceDAO {
     }
 
      public void saveToDB(){
-
+        //save to db
     }
 
     public void saveToFile(){
-
+        //save to file
     }
 
 }
