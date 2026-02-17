@@ -16,7 +16,9 @@ public class Driver {
 
         careTaker.addMemento(snapshot2);
 
-        originator.restorMemento(snapshot1);
-        
+        ConfigurationMemento restoredMemento =careTaker.undo();
+
+        originator.restorMemento(restoredMemento);
+
     }
 }
