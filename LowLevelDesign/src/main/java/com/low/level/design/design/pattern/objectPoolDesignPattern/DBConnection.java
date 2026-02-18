@@ -1,4 +1,4 @@
-package com.low.level.design.design.pattern.objectPoolDP;
+package com.low.level.design.design.pattern.objectPoolDesignPattern;
 
 
 import java.sql.Connection;
