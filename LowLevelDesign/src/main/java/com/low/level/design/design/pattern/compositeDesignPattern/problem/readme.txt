@@ -1,0 +1,2 @@
+now here the problem is we have to check with instanceOf object and then typecast and then ls().
+We have a list of Object as Directory and File don't have any common parent this is why we have to typecast it as well.
