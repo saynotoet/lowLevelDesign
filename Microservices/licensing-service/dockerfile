@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jdk as build
+FROM eclipse-temurin:11-jre
 
 WORKDIR /app
 
@@ -6,16 +6,4 @@ ARG JAR_FILE=target/*.jar
 
 COPY ${JAR_FILE} app.jar
 
-RUN java -Djarmode=layertools -jar app.jar extract
-
-
-FROM eclipse-temurin:11-jre
-
-WORKDIR /app
-
-COPY --from=build dependencies/ ./
-COPY --from=build spring-boot-loader/ ./
-COPY --from=build snapshot-dependencies/ ./
-COPY --from=build application/ ./
-
-ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+ENTRYPOINT ["java","-jar","app.jar"]
